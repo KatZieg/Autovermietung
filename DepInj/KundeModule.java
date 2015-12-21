@@ -1,4 +1,4 @@
-package autovermietung;
+package depinjAutovermietung;
 
 import com.google.inject.Binder;
 
@@ -10,5 +10,4 @@ public class KundeModule implements Module {
 	public void configure(Binder binder) {
 		binder.bind(Iauto.class).to(Auto.class);
 	}
-
 }

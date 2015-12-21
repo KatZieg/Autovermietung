@@ -1,11 +1,10 @@
-package autovermietung;
+package depinjAutovermietung;
 
 public class AutoMock implements Iauto {
 
 	@Override
-	public double berechnePreis(double tagespreis, double rabatt) {
-		
+	public double berechneRabatt(double tagespreis) {
+
 		return 180;
 	}
-
 }

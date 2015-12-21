@@ -1,9 +1,9 @@
-package autovermietung;
+package depinjAutovermietung;
 
 import com.google.inject.ImplementedBy;
 
-@ImplementedBy (KundeModule.class)
+@ImplementedBy(KundeModule.class)
 
 public interface Iauto {
-	public double berechnePreis(double tagespreis, double rabatt);
+	public double berechneRabatt(double tagespreis);
 }
