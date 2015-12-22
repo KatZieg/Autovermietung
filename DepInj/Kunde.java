@@ -37,7 +37,7 @@ public class Kunde extends Person {
 		 * "Das Auto ist leider nicht frei!"); } return id;
 		 */
 
-		double gesamtPreis = tagespreis - autointerface.berechneRabatt(tagespreis) * anzahlTage;
+		double gesamtPreis = tagespreis * anzahlTage - autointerface.berechneRabatt(tagespreis) ;
 		return gesamtPreis;
 	}
 }
